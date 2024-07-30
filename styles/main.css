@@ -1,0 +1,72 @@
+:root {
+    --dark: #2B3541;
+    --light: #F3F3F3;
+    --accent: #FBF138;
+    --accent-light: linear-gradient(180deg, #fbf138 0%, rgba(253, 249, 182, 0.45) 100%);
+
+    --montserrat: "Montserrat", sans-serif;
+}
+html {
+    font-family: var(--montserrat);
+    color: var(--dark);
+}
+.container {
+    width: 100%;
+    max-width: 1142px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    margin-top: 50px;
+}
+.header-wrapper {
+    display: flex;
+    gap: 92px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: block;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 97px;
+    height: 30px;
+}
+.header-nav {
+    flex-grow: 1;
+    display: flex;
+    gap: 54px;
+}
+.nav-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--dark);
+}
+.mail {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--dark);
+    position: relative;
+    z-index: 1;
+}
+.mail::before {
+    content: '';
+    display: block;
+    background-color: var(--accent);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -13px;
+    top: 0;
+    z-index: -1;
+}
