@@ -93,20 +93,71 @@
             </div>
         </div>
     </main>
-    <section>
+    <section class="email">
         <div class="container">
-            <div class="email">
                 <h2 class="email-title">Подпишитесь на рассылку</h2>
-                <form action="#" method="post">
-                    <input type="email" name="email" required>
-                    <button>Подписаться</button>
-                </form>
-            </div>
+                <div class="email-wrapper">
+                    <div class="email-form">
+                        <form action="">
+                            <div>
+                                <input type="email" placeholder="Ваш e-mail">
+                            </div>
+                        </form>
+                        <div class="agreement">
+                            <input type="checkbox" id="01" class="checkbox">
+                            <label for="01">Согласен с обработкой <a href="#" target="_blank">персональных данных</a></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="min-btn">Подписаться</button>
+                </div>
         </div>
     </section>
-    <aside></aside>
+    <aside>
+        <div class="container">
+            <div class="about">
+                <div class="about-wrapper">
+                    <h2 class="about-title">О компании</h2>
+                    <p class="about-description">Наша компания является одной из&nbsp;немногих,&nbsp;кто предлагает фитнес услуги онлайн! Оставайтесь c&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
+                    <button class="min-btn">Записаться</button>
+                </div>
+                <img src="images/about.jpg" alt="Девушка">
+            </div>
+            <div class="advantages">
+                <article>
+                    <h3>Экономия времени </h3>
+                    <p>Не нужно тратить время на дорогу</p>
+                </article>
+                <article>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Внимание тренера пренадлежит только вам</p>
+                </article>
+                <article>
+                    <h3>Экономия денег</h3>
+                    <p>Средняя цена одной тренировки &ndash; 700&#8381;</p>
+                </article>
+                <article>
+                    <h3>Опытный персонал</h3>
+                    <p>Стаж работы у наших тренеров от 5 лет</p>
+                </article>
+            </div>
+        </div>
+    </aside>
     <footer>
-
+        <div class="container">
+            <div class="header-wrapper">
+                <a class="logo" href="#"></a>
+                <nav class="header-nav footer-nav">
+                    <a href="#" class="nav-link">Мероприятия</a>
+                    <a href="#" class="nav-link">Расписание</a>
+                    <a href="#" class="nav-link">О компании</a>
+                </nav>
+                <a href="mailto:info@freefit.com" class="mail">info@freefit.com</a>
+            </div>
+            <div class="copy">
+                <p>&copy; 2022, Все права защищены</p>
+                <p>Сделано в рамках курса учебной платформы <a href="#">Frontend Blok</a></p>
+            </div>
+        </div>
     </footer>
     <script src="scripts/script.js"></script>
 </body>
